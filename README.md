@@ -18,3 +18,10 @@ int main()
 ```
 
 ```procceessing
+void setup()
+{
+
+  background(255);
+  ellipse(200,200, 30,30); 
+
+}
