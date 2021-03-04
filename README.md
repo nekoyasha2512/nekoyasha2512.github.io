@@ -1,27 +1,26 @@
 
-# 大標題
-## 小標題1
-內容
-## 小標題2
-圖片內容
-![google](https://www.google.com.tw/images/branding/googlelogo/2x/googlelogo_color_160x56dp.png)
-
-
+# CCE程式設計 109下
+## 第一周
+### 進階題：分式化簡
 ```C
 #include <stdio.h>
 int main()
 {
 
-  printf("Hello World!")
+	int a, b, c, x, y;
+	scanf("%d%d",&a ,&b);
+	x=a; y=b;
+	while( b!=0 )
+	{
+		c=b;
+		b=a%b;
+		a=c;
+	}
+	x/=a;
+	y/=a;
+	printf("%d %d\n", x, y);
 
 }
 ```
 
 ```procceessing
-void setup()
-{
-
-  background(255);
-  ellipse(200,200, 30,30); 
-
-}
